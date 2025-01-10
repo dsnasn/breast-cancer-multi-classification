@@ -69,9 +69,10 @@ breast-cancer-multi-classification/
 
 ## 🧰 Technology Stack
 
+- **Deep Learning Framework**: TensorFlow/Keras
+- **Base Model**: DenseNet121 (Pre-trained)
+- **Dataset**: [BreaKHis Dataset](https://www.kaggle.com/datasets/ambarish/breakhis?select=BreaKHis_v1)
 - **Frontend**: Streamlit
-- **Backend**: TensorFlow/Keras
-- **Visualization**: Streamlit Components
 
 ---
 
