@@ -42,7 +42,7 @@ Please contact the author to obtain the necessary model files.
 ### Run Locally
 After downloading the model files and placing them in the `models/` directory, launch the Streamlit application:
 ```bash
-streamlit run streamlit_app.py
+streamlit run main.py
 ```
 
 ---
@@ -58,6 +58,7 @@ Please consult a qualified medical professional for accurate diagnosis and furth
 breast-cancer-multi-classification/
 │
 ├── test results/         # GIFs for demonstration
+├── models/
 ├── main.py               # Main Streamlit application
 ├── utils.py
 ├── requirements.txt      
