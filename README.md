@@ -71,6 +71,24 @@ The model has been deployed using Streamlit for real-time image uploads and pred
 
 ---
 
+## 📂 Project Structure
+```bash
+breast-cancer-multi-classification/
+│
+├── test results/         # GIFs for demonstration
+├── models/
+├── main.py               # Main Streamlit application
+├── utils.py
+├── requirements.txt      
+└── README.md             
+```
+### 🔗 Training Code
+
+The training code for this project can be found in the following repository:  
+[Breast Cancer Diagnosis - Training Code](https://github.com/dsnasn/breast-cancer-diagnosis/tree/main)
+
+---
+
 ## 🛠️ Quick Start
 ### Install Dependencies
 Run the following command to install all required libraries:
@@ -92,20 +110,6 @@ streamlit run main.py
 ## ⚠️ Disclaimer
 The diagnosis results provided by this application are for reference purposes only.
 Please consult a qualified medical professional for accurate diagnosis and further evaluation.
-
----
-
-## 📂 Project Structure
-```bash
-breast-cancer-multi-classification/
-│
-├── test results/         # GIFs for demonstration
-├── models/
-├── main.py               # Main Streamlit application
-├── utils.py
-├── requirements.txt      
-└── README.md             
-```
 
 ---
 
