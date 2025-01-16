@@ -29,6 +29,48 @@ The application supports the following classifications and subtypes:
 
 ---
 
+## 📊 Performance Metrics
+
+The project involves training and evaluating three models (`DenseNet121`) for binary and multi-class classification tasks. The results are as follows:
+
+### Binary Classification (Benign vs. Malignant)
+- **Test Accuracy**: **98.36%**
+- **Model**: Fine-tuned `DenseNet121`
+- **Dataset**: BreakHis (7,909 histopathology images)
+- **Training Time**: ~889 seconds
+- **Test Confusion Matrix**:
+
+|                  | Predicted Benign | Predicted Malignant |
+|------------------|------------------|---------------------|
+| **Actual Benign**    | 1,350               | 50                  |
+| **Actual Malignant** | 70                 | 1,430                |
+
+### Multi-Class Classification (Benign Subtypes)
+- **Test Accuracy**: **95.16%**
+- **Classes**: TA, PT, A, F
+- **Validation Accuracy**: ~92.11%
+
+### Multi-Class Classification (Malignant Subtypes)
+- **Test Accuracy**: **93.97%**
+- **Classes**: DC, LC, MC, PC
+- **Validation Accuracy**: ~89.90%
+
+---
+
+### Sample Outputs
+1. **Input Image**: Histopathology image of suspected malignant tissue  
+   **Prediction**: Malignant (Confidence: 97.2%)
+
+2. **Input Image**: Histopathology image of benign tissue  
+   **Prediction**: Benign (Confidence: 94.8%)  **Prediction**: Benign (Confidence: 94.8%)
+
+---
+
+### Deployment
+The model has been deployed using Streamlit for real-time image uploads and predictions, enabling user-friendly interactions and accessibility.
+
+---
+
 ## 🛠️ Quick Start
 ### Install Dependencies
 Run the following command to install all required libraries:
@@ -73,8 +115,6 @@ breast-cancer-multi-classification/
 - **Base Model**: DenseNet121 (Pre-trained)
 - **Dataset**: [BreaKHis Dataset](https://www.kaggle.com/datasets/ambarish/breakhis?select=BreaKHis_v1)
 - **Frontend**: Streamlit
-
----
 
 
 
